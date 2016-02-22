@@ -1,0 +1,21 @@
+@import "partials/setup";
+@import "partials/backgrounds";
+@import "partials/grid";
+
+$cream: RGBA(240, 233, 218, 1);
+$gray:RGBA(64, 64, 69, 1);
+$orange: RGBA(231, 122, 0, 1);
+$black:RGBA(38, 36, 34, 1);
+$white:RGBA(254, 252, 248, 1);
+
+
+@import "partials/base";
+@import "partials/header";
+@import "partials/menu";
+@import "partials/about";
+@import "partials/photos";
+@import "partials/forms";
+@import "partials/footer";
+
+@import "partials/mediaQueries";
+

@@ -1,0 +1,45 @@
+header.hero {
+	background-image: url(../images/hero.jpg);
+}
+
+section.menu {
+	background-image: url(../images/menubg.png);
+}
+
+section.about {
+	background-image: url(../images/aboutbg.png);
+}
+
+section.gallery {
+	background-image: url(../images/gallerybg.jpg);
+}
+
+section.blog {
+	background-image: url(../images/journalbg.png);
+}
+
+section.reservations {
+	background-image: url(../images/reservationbg.png);
+}
+
+section.contact {
+	background-image: url(../images/contactbg.png);
+} 
+
+footer {
+	background-image: url(../images/footerbg.png);
+}
+
+
+header.hero, 
+section.menu, 
+section.about, 
+section.gallery, 
+section.journal,
+section.reservations,
+section.contact,
+footer {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center; 
+}  

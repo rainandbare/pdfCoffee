@@ -1,0 +1,244 @@
+
+
+main.resos {
+	display: flex;
+	flex-flow: row wrap;
+	.resoInfo{
+		@include column(4);
+		p {	
+			font-size: 1.2rem;
+			line-height: 1.8;
+			padding-bottom: 30px;
+		}
+		p:last-of-type {
+			padding-bottom: 60px;
+		}
+		a {
+			display: flex;
+			flex-flow: row wrap;
+			position: relative;
+			border: 1px solid $black;
+			width: 250px;
+			padding: 20px;
+			justify-content: center;
+			.callUs{
+				width:80%;
+				h4 {
+				color: $black;
+				font-size: 1.3rem;
+				font-weight: 600;
+				}
+				.number {
+					font-size: 2rem;
+
+				}
+			}	
+			&:before {
+				content: "";
+				position: absolute;
+				top:-7px;
+				left:-7px;
+				right:-7px;
+				bottom:-7px;
+				display: block;
+				border: 4px solid $black;
+			}
+		}
+	}
+}
+
+
+
+	.phoneIcon{
+				width: 20%;
+				svg {
+					fill: $orange;
+					width: 100%;
+				}
+
+			}
+
+
+
+main.resos form.resoForm {
+	@include column(8);
+	position: relative;
+	border: 1px solid $black;
+	z-index: 1;
+	display: flex;
+	&:before {
+			content: "";
+			position: absolute;
+			top:-7px;
+			left:-7px;
+			right:-7px;
+			bottom:-7px;
+			display: block;
+			border: 4px solid $black;
+			z-index: -1;
+			}
+	}
+
+
+
+	form.resoForm, form.contactForm {
+		display: flex;
+		flex-flow: row wrap;
+		input {
+			width: 50%;
+			background: $white;
+			border: none;
+		}
+		div.date, div.time {
+			width: 50%;
+		}
+	}
+	
+	
+	
+
+form.resoForm, form.contactForm {
+	input[type=date], 
+	input[type=time] {
+		width: 80%;
+	}
+
+
+	textarea, 
+	input[type=submit] {
+		width: 100%;
+	}
+
+	textarea {
+		min-height: 200px;
+		border: none;
+		resize: none;
+	}
+	
+	div.date, 
+	div.time, {
+		display: flex;
+	}
+
+	label {
+		background: $white;
+		padding: 15px;
+		width: 20%;
+	}
+
+	input, textarea, label {
+		padding: 20px;
+		border-bottom: 1px solid $black;
+		background: $white;
+		&:focus {
+			outline:none;
+		}
+	}
+
+	label.date, 
+	input[type=number], 
+	input[type=email] {
+		border-right: 1px solid $black;
+	}
+
+	input, textarea { 
+		@include placeholder {
+    		@extend .baseSans;
+    		color: $black;
+    		font-weight: 600;
+    		font-family: 'Raleway', serif;
+			}
+	}
+	
+	input[type=submit] {
+    		@extend .baseSans;
+    		color: $black;
+    		font-weight: 600;
+    		font-size: 2rem;
+    		font-family: 'Raleway', serif;
+    		padding: 40px 0px;
+    		text-transform: uppercase;
+    		background-image: url(../images/seal.png);
+    		background-repeat: no-repeat;
+    		background-size: 32%;
+    		background-position: 3% 40%; 
+
+			}
+
+}
+
+section.contact {
+	input[type=email]{
+		border-right: none;
+	}
+	input[type=submit] {
+		border-bottom: none;
+	}
+	 .contactInfo, .contactForm {
+		@include column(6);
+	}
+
+	.contactInfo {
+			li {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			font-family: 'Raleway', serif;
+			
+				h6, p { 
+					padding-left: 10px;					
+				}
+	 		}
+			ul.socialMenu{
+				display: flex;
+				flex-flow: row wrap;
+				padding: 40px 0px;
+			}
+			iframe {
+				width: 100%;
+
+			}
+	}
+	.contactInfoBottom {
+		position: relative;
+	}
+
+	.mapOverlay {
+		position: absolute;
+		top:0px;
+		left:0px;
+		right:0px;
+		bottom:0px;
+		background: transparent;
+		z-index: 7;
+	}
+	 .contactForm {
+		border: 1px black solid;
+		position: relative;
+		z-index: 1;
+		&:before {
+			content: "";
+			position: absolute;
+			top:-7px;
+			left:-7px;
+			right:-7px;
+			bottom:-7px;
+			display: block;
+			border: 4px solid $black;
+			z-index: -1;
+			}
+		input {
+			width: 100%;
+		}
+	}
+}
+
+div.date label svg {
+	fill: $black;
+}
+
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;
+}
+
+

@@ -1,0 +1,82 @@
+// HEADER STYLES
+
+ 
+
+ .headerTop {
+ 	display: flex;
+ 	flex-flow: column wrap;
+ 	align-items: center;
+ 	img {
+ 		width: 100%;
+ 	}
+	.headerLogo {
+		padding-top: 10%;
+		padding-bottom: 20px;
+		width: 10%;
+	}
+ 	.headerLogoText {
+ 		width: 50%;
+ 	}
+
+ 	ul.logoText {
+ 			display: flex;
+ 		li {
+ 			padding-right: 20px; 
+ 		}
+ 		li:last-of-type {
+ 			padding-right: none;
+ 		}
+ 	}
+
+	.headerSeal {
+		width: 25%;
+		position: relative;
+		top: 90px;
+	}
+	.sealText {
+		position: absolute;
+		top:25%;
+		left:0;
+		right:0;
+		bottom:0;
+		text-align: center;
+		.hours {
+			padding-top: 10%;
+			p { 
+				line-height: 1.8;
+
+			}
+		}
+	}
+}
+
+.headerBottom {
+	ul {
+		display: flex;
+		flex-direction: row wrap;
+		li {
+			@include column(4);
+			text-align: center;
+			padding: 10% 20px;
+			p {
+				line-height: 1.6;
+			}
+			h3 {
+				padding-bottom: 8px;
+			}
+		}
+
+	}
+	.headerBottomImg{
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+	
+ 
+
+ 

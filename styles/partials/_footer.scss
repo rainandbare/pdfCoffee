@@ -1,0 +1,45 @@
+
+footer .wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	.footerSocial {
+		@include column(5)
+	}
+	.footerMenu {
+		@include column(3)
+	}
+	.footerContact {
+		@include column(4)
+	}
+
+}
+
+
+footer a.hamburger {
+	display: none;
+}
+
+footer h4 {
+	padding: 0px 0 25px 0;
+}
+
+.twitterFeed,
+.hours {
+	padding: 0px 0 40px 0;
+}
+
+ul.socialMenu {
+	display: flex;
+	flex-flow: row wrap;
+	li {
+		padding-right: 10px;
+		i {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+footer ul li {
+	padding-bottom: 10px;
+}
+
